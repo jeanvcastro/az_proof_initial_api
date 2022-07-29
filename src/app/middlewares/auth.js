@@ -3,6 +3,9 @@ import jwt from 'jsonwebtoken';
 import authConfig from '../../config/auth';
 
 export default (req, res, next) => {
+  const guestPaths = ['/', '/proof/session'];
+  if (guestPaths.includes(req.path)) return next();
+
   const authHeader = req.headers.authorization;
 
   if (!authHeader) {

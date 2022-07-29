@@ -1,0 +1,22 @@
+body {
+  background-image: linear-gradient(to bottom right, #58666f, #90979c);
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+main {
+  padding: 100px 0;
+}
+
+.logo {
+  width: 100px;
+}
+
+th,
+td {
+  white-space: nowrap;
+}
+
+.page-link {
+  cursor: pointer;
+}

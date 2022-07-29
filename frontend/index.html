@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Teste Azape</title>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div id="dashboard-container" class="row justify-content-center" style="display: none">
+          <div class="col-md-10">
+            <div class="row mb-5">
+              <div class="col-md">
+                <div class="card text-bg-secondary">
+                  <div class="card-body">
+                    <h1 id="orders">0</h1>
+                    <p class="mb-0">Pedidos</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md">
+                <div class="card text-bg-primary">
+                  <div class="card-body">
+                    <h1 id="sales">0</h1>
+                    <p class="mb-0">Vendas</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md">
+                <div class="card text-bg-success">
+                  <div class="card-body">
+                    <h1 id="average-ticket">R$ 0,00</h1>
+                    <p class="mb-0">Ticket Médio</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row justify-content-end mb-5">
+              <div class="col-md-3">
+                <div class="input-group d-inline-flex w-auto">
+                  <input type="date" class="form-control" id="input-date" value="2021-12-11" />
+                  <button class="btn btn-primary" type="button" id="btn-filter">Filtrar</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="table-responsive bg-white mb-3">
+              <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th scope="col">ID Pedido</th>
+                    <th scope="col">Data Criação</th>
+                    <th scope="col">Nome do Cliente</th>
+                    <th scope="col">CPF Cliente</th>
+                    <th scope="col">Status do Pedido</th>
+                    <th scope="col">Status do Pagamento</th>
+                    <th scope="col">Método do Pagamento</th>
+                    <th scope="col">Total R$</th>
+                  </tr>
+                </thead>
+                <tbody id="table-data"></tbody>
+              </table>
+            </div>
+
+            <nav class="d-flex justify-content-end">
+              <ul class="pagination"></ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Scripts -->
+    <script src="js/index.js"></script>
+  </body>
+</html>

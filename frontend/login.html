@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Teste Azape</title>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-4">
+            <img class="logo mb-4 d-block mx-auto" src="https://azape.co/images/logo.svg" alt="Azape Logo" />
+            <div class="card">
+              <div class="card-body">
+                <form id="form-login">
+                  <div class="mb-3">
+                    <label for="email" class="form-label">E-mail</label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="email"
+                      placeholder="Digite o e-mail"
+                      value="teste@azape.co"
+                      required
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label for="password" class="form-label">Senha</label>
+                    <input
+                      type="password"
+                      class="form-control"
+                      id="password"
+                      placeholder="Digite a senha"
+                      value="123456"
+                      required
+                    />
+                  </div>
+                  <button type="submit" id="btn-login" class="btn btn-primary mt-2 w-100">Entrar</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Scripts -->
+    <script src="js/login.js"></script>
+  </body>
+</html>
